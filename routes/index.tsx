@@ -18,7 +18,6 @@ export const handler: Handlers<IPokemonRequest[] | null> = {
     }
     const pokemonRequest = await resp.json();
 
-    console.log(pokemonRequest)
     return ctx.render(pokemonRequest);
   },
 };

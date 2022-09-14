@@ -13,9 +13,6 @@ export const handler: Handlers = {
 
     const pokemon: IPokemon = await resp.json();
 
-    console.log('pokemon')
-    console.log(pokemon)
-
     return new Response(JSON.stringify(pokemon));
   },
 };

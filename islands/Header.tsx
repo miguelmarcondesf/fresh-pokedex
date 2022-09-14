@@ -1,14 +1,8 @@
 /** @jsx h */
 import { h } from "preact";
-import { useState } from "preact/hooks";
 import { tw } from "@twind";
 
-interface HeaderProps {
-  start?: number;
-}
-
-export default function Header(props: HeaderProps) {
-  const [count, setCount] = useState(props.start);
+export default function Header() {
   const listItem = tw`block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:p-0`;
 
   return (
