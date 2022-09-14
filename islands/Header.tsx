@@ -17,9 +17,6 @@ export default function Header() {
               <li>
                 <a href="/search" class={listItem} aria-current="page">Search</a>
               </li>
-              <li>
-                <a href="/team" class={listItem} aria-current="page">Team</a>
-              </li>
             </ul>
           </div>
         </div>

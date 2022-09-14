@@ -12,6 +12,9 @@ export const handler: Handlers<IPokemon | null> = {
     const { name } = ctx.params;
     const resp = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
 
+    console.log('middle state')
+    console.log(ctx.state.data)
+
     if (resp.status === 404) {
       return ctx.render(null);
     }
