@@ -21,6 +21,9 @@ export default function Header(props: HeaderProps) {
                 <a href="/" class={listItem} aria-current="page">Pokémon List</a>
               </li>
               <li>
+                <a href="/search" class={listItem} aria-current="page">Search</a>
+              </li>
+              <li>
                 <a href="/team" class={listItem} aria-current="page">Team</a>
               </li>
             </ul>
